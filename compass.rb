@@ -5,21 +5,21 @@
 class Compass < Formula
   desc "Markdown-native task and document tracking"
   homepage "https://github.com/rogersnm/compass"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rogersnm/compass/releases/download/v0.9.0/compass_0.9.0_darwin_amd64.tar.gz"
-      sha256 "1594d8787ebeb2cf811cd42cd5b3371c42dcfb2d98dab5dbeb33c6586a1be6bf"
+      url "https://github.com/rogersnm/compass/releases/download/v0.10.0/compass_0.10.0_darwin_amd64.tar.gz"
+      sha256 "d65ef9919aa2754e6bbc0ff958879d09bdab28e0c4a319fda79b5ea16f45ce29"
 
       def install
         bin.install "compass"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rogersnm/compass/releases/download/v0.9.0/compass_0.9.0_darwin_arm64.tar.gz"
-      sha256 "5087f41a56814c631db72c7a47deae55043a83d86979e7deb5fd937eef27ace8"
+      url "https://github.com/rogersnm/compass/releases/download/v0.10.0/compass_0.10.0_darwin_arm64.tar.gz"
+      sha256 "db34c2c02dadeefe553adbd38f2e6fba943136d9b92cadc7ac2315d20eb8016c"
 
       def install
         bin.install "compass"
@@ -29,15 +29,15 @@ class Compass < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rogersnm/compass/releases/download/v0.9.0/compass_0.9.0_linux_amd64.tar.gz"
-      sha256 "3387c4b64692105fdb3440ea0312848ae4c3d62d4135d043570c43e040a353e6"
+      url "https://github.com/rogersnm/compass/releases/download/v0.10.0/compass_0.10.0_linux_amd64.tar.gz"
+      sha256 "4ab6703b39eed0272f8c82629ece40528989d713dfe94aaf209b2af17943d75b"
       def install
         bin.install "compass"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rogersnm/compass/releases/download/v0.9.0/compass_0.9.0_linux_arm64.tar.gz"
-      sha256 "05de35e96b6f5fcc55c7c570573ba0b1d120ecdcb152d02cfe0fcea4a4c25857"
+      url "https://github.com/rogersnm/compass/releases/download/v0.10.0/compass_0.10.0_linux_arm64.tar.gz"
+      sha256 "e22df38039256a3de1b611db7af80db6f3d6e709a63844e8755f82d574c8d486"
       def install
         bin.install "compass"
       end
